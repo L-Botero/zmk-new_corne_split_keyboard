@@ -36,6 +36,12 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+        td1: td1 {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "Left/Right Mouse Click Tap Dance";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&mkp LCLK>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -134,7 +140,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
         layer_6 {
-            display-name = "Russian";
+            display-name = "System";
             bindings = <
 &studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
 &trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
